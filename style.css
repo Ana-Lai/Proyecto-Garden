@@ -1,0 +1,249 @@
+*{margin: 0%; padding: 0%;}
+
+/* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */
+
+.header {
+    display: flex;
+    background-color: black;
+    background-image: url("./imagenes/JardinFondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: initial;
+    position: sticky;
+    top: 0%;
+    height: 100px;
+    width: 100%;
+    z-index: 10000;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header__logo {
+    margin: 0%;
+    width: 100px;
+}
+
+.navegador {
+    text-align: center;
+}
+
+.navegador ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+
+.navegador a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;    
+    min-width: 6rem;
+}
+
+.navegador ul li a:hover {
+    background-color: rgb(255, 255, 200);
+    box-shadow: 5px 5px 15px;
+}
+
+.navegador ul li ul {
+    display: none;
+    background-color: rgb(252, 252, 149);
+    margin-top: 0%;
+}
+
+.navegador ul li a:hover + ul, .navegador ul li ul:hover {
+    display: block;    
+}
+
+/* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
+
+.nuevos_ingresos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.nuevos_ingresos_1 {
+    width: 20vw;
+}
+
+.imagen_1 {
+    width: 20vw;
+    box-shadow: 5px 5px 15px;
+}
+
+.ul_contenedor {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 4vw;
+}
+
+.nombre {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+}
+
+.precio {
+    display: flex;
+    justify-content: center;
+}
+
+.seccion2 {
+    background-color: rgb(255, 255, 161);
+}
+
+.tips {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.planta {
+    width: 5vw;
+    padding-bottom: 1vw;
+}
+
+.sustrato {
+    width: 5vw;
+    padding-bottom: 1vw;
+}
+
+.maceta {
+    width: 5vw;
+    padding-bottom: 1vw;
+}
+
+.herramientas {
+    width: 5vw;
+    padding-bottom: 1vw;
+}
+
+.imagen_1_contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.consejos_titulo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vw;
+}
+
+.consejos_texto {
+    display: flex;
+    text-align: center;
+    padding-bottom: 4vw;
+}
+
+.main_contacto {
+    background-image: url();
+    background-color: rgb(255, 255, 161);
+    padding-bottom: 3%;
+}
+
+.contacto_contenedor {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 161);
+}
+
+.contacto_titulo {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.contacto_formulario {
+    box-shadow: 0 0 20px 0 black;
+    padding: 2em;
+}
+
+.contacto_formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto_formulario form .block {
+    grid-column: 1 / 3 ;
+}
+
+.contacto_formulario form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto_formulario form input,
+.contacto_formulario form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    border-bottom: 1px solid sienna;
+    
+}
+
+.contacto_formulario form button {
+    background-color: sienna;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    box-shadow: 0 0 10px 0 black;
+    color: white;
+    width: 8vw;
+    text-align: center;
+    margin-left: 16vw;  
+}
+
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+
+.footer {
+    background-color: sienna;
+    height: 20vh;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.facebook {
+    width: 25px;
+    margin-right: 1vw;
+}
+
+.instagram {
+    width: 25px;
+}
+
+.whatsapp {
+    width: 25px;
+    margin-left: 1vw;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    padding-top: 7vw;
+}
+
+@media only screen and (max-width: 768px){
+    .header {
+        flex-direction: column;
+        height: fit-content;        
+    }
+}
