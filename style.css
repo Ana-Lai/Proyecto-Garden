@@ -4,6 +4,7 @@
 
 .header {
     display: flex;
+    flex-direction: row;
     background-color: black;
     background-image: url("./imagenes/JardinFondo.jpg");
     background-repeat: no-repeat;
@@ -15,7 +16,6 @@
     width: 100%;
     z-index: 10000;
     justify-content: space-between;
-    flex-direction: row;
 }
 
 .header__logo {
@@ -44,9 +44,13 @@
     min-width: 6rem;
 }
 
+.primerul li {
+    transition: transform 3s, background-color 5s;
+}
+
 .navegador ul li a:hover {
+    transform: scale(1.2);
     background-color: rgb(255, 255, 200);
-    box-shadow: 5px 5px 15px;
 }
 
 .navegador ul li ul {
@@ -75,8 +79,30 @@
 
 .imagen_1 {
     width: 20vw;
-    box-shadow: 5px 5px 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
+
+/*.carrusel {
+    width: 50vw;
+    height: 100vw;
+    background-image: url(./imagenes/Plantas/Cola\ de\ tigre.jpg);
+    background-size: cover;
+    animation-name: carrusel;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+}
+
+@keyframes carrusel {
+    33% {
+        background-image: url(./imagenes/Plantas/Monstera.jpg);
+    }
+    66% {
+        background-image: url(./imagenes/Plantas/Alocasia.jpg);
+    }
+    100% {
+        background-image: url(./imagenes/Plantas/Potus.jpg);
+    }
+}*/
 
 .ul_contenedor {
     list-style: none;
@@ -98,7 +124,8 @@
 }
 
 .seccion2 {
-    background-color: rgb(255, 255, 161);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,140,1) 20%, rgba(160,82,45,1) 100%);
 }
 
 .tips {
@@ -148,7 +175,7 @@
 
 .main_contacto {
     background-image: url();
-    background-color: rgb(255, 255, 161);
+    background-color: #ffffa1;
     padding-bottom: 3%;
 }
 
@@ -193,12 +220,12 @@
     background: none;
     outline: none;
     color: black;
-    border-bottom: 1px solid sienna;
+    border-bottom: 1px solid #a0522d;
     
 }
 
 .contacto_formulario form button {
-    background-color: sienna;
+    background-color: #a0522d;
     border: none;
     text-transform: uppercase;
     padding: 1em;
@@ -212,7 +239,7 @@
 /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 
 .footer {
-    background-color: sienna;
+    background-color: #a0522d;
     height: 20vh;
     width: 100%;
 }
