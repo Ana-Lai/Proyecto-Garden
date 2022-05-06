@@ -125,7 +125,7 @@
 
 .seccion2 {
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,140,1) 20%, rgba(160,82,45,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(55,168,49,1) 20%, rgba(12,62,10,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .tips {
@@ -239,9 +239,15 @@
 /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 
 .footer {
-    background-color: #a0522d;
-    height: 20vh;
+    background-color: rgb(14, 14, 14);
+    height: 30vh;
     width: 100%;
+}
+
+.contactanos {
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .footer ul {
@@ -265,7 +271,7 @@
 .redes {
     display: flex;
     justify-content: center;
-    padding-top: 7vw;
+    padding-top: 7vw;    
 }
 
 @media only screen and (max-width: 768px){
@@ -273,4 +279,65 @@
         flex-direction: column;
         height: fit-content;        
     }
+}
+
+/* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */
+
+.headerbootstrap {
+    background-image: url(./imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.logob {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.nav-link {
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    margin: 8vh;
+}
+
+.fondoimagen {
+    width: 100%;
+    height: 47vw;
+}
+
+.nuevos_ingresos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.nuevos_ingresos_2 {
+    width: 20vw;
+    color: white;
+}
+
+.fondo__seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagenFondo {
+    width: 100vw;
+    height: 47vw;
+    background-image: url(./imagenes/fondo.png);
+    background-size: 100%;
+    
+}
+.fondo__seccion h1 {
+    width: 50vw;
+    font-size: 4vw;
+    color: white;
+    text-align: center;
 }
