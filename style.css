@@ -2,65 +2,81 @@
 
 /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */ /* BODY */
 
-.header {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    background-image: url("./imagenes/JardinFondo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: initial;
-    position: sticky;
-    top: 0%;
-    height: 100px;
-    width: 100%;
-    z-index: 10000;
-    justify-content: space-between;
-}
-
 .header__logo {
     margin: 0%;
     width: 100px;
+    
 }
 
-.navegador {
+/* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */
+
+.headerbootstrap {
+    background-image: url(./imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.logob {
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    margin: 8vh;
+}
+
+.fondoimagen {
+    width: 100%;
+    height: 47vw;
+}
+
+.nuevos_ingresos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.nuevos_ingresos_2 {
+    width: 20vw;
+    color: white;
+}
+
+.fondo__seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagenFondo {
+    width: 100vw;
+    height: 47vw;
+    background-image: url(./imagenes/fondo.png);
+    background-size: 100%;
+    
+}
+.fondo__seccion h1 {
+    width: 50vw;
+    font-size: 4vw;
+    color: white;
     text-align: center;
 }
 
-.navegador ul {
+.macetas {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    list-style: none;
     display: flex;
-    justify-content: end;
-    margin: 20px;
-}
-
-.navegador a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 20px;    
-    min-width: 6rem;
-}
-
-.primerul li {
-    transition: transform 3s, background-color 5s;
-}
-
-.navegador ul li a:hover {
-    transform: scale(1.2);
-    background-color: rgb(255, 255, 200);
-}
-
-.navegador ul li ul {
-    display: none;
-    background-color: rgb(252, 252, 149);
-    margin-top: 0%;
-}
-
-.navegador ul li a:hover + ul, .navegador ul li ul:hover {
-    display: block;    
+    justify-content: center;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+    margin-top: 10vw;    
 }
 
 /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
@@ -73,36 +89,14 @@
     margin-bottom: 4vw;
 }
 
-.nuevos_ingresos_1 {
-    width: 20vw;
-}
-
 .imagen_1 {
     width: 20vw;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
 
-/*.carrusel {
-    width: 50vw;
-    height: 100vw;
-    background-image: url(./imagenes/Plantas/Cola\ de\ tigre.jpg);
-    background-size: cover;
-    animation-name: carrusel;
-    animation-iteration-count: infinite;
-    animation-duration: 40s;
+.section_contenedor {
+    margin-top: 20;
 }
-
-@keyframes carrusel {
-    33% {
-        background-image: url(./imagenes/Plantas/Monstera.jpg);
-    }
-    66% {
-        background-image: url(./imagenes/Plantas/Alocasia.jpg);
-    }
-    100% {
-        background-image: url(./imagenes/Plantas/Potus.jpg);
-    }
-}*/
 
 .ul_contenedor {
     list-style: none;
@@ -174,8 +168,7 @@
 }
 
 .main_contacto {
-    background-image: url();
-    background-color: #ffffa1;
+    background-color: white;
     padding-bottom: 3%;
     margin-top: 20vh;
 }
@@ -185,7 +178,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1.5rem;
-    background-color: rgb(255, 255, 161);
+    background-color: white;
 }
 
 .contacto_titulo {
@@ -221,12 +214,12 @@
     background: none;
     outline: none;
     color: black;
-    border-bottom: 1px solid #a0522d;
+    border-bottom: 1px solid rgb(55,168,49,1);
     
 }
 
 .contacto_formulario form button {
-    background-color: #a0522d;
+    background-color: rgb(12,62,10,1);
     border: none;
     text-transform: uppercase;
     padding: 1em;
@@ -234,30 +227,83 @@
     color: white;
     width: 8vw;
     text-align: center;
-    margin-left: 16vw;  
+    margin-left: 16vw;
+    border-radius: 10px;
 }
 
 /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 
-.footer {
-    background-color: rgb(14, 14, 14);
-    height: 30vh;
+.pie-pagina {
     width: 100%;
+    background-color: rgb(14, 14, 14);
 }
 
-.contactanos {
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 250px;
+    padding: 30px 0px 0px;    
+}
+
+.navegacion-footer {
+    padding: 0%;
+}
+
+.navegacion-footer li {
+    list-style: none;
+}
+
+.pie-pagina .grupo-1 .box .navegacion-footer a {
+    text-decoration: none;
     color: white;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.footer ul {
+.pie-pagina .grupo-1 .box figure img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: rgb(238, 231, 231);
+    margin-bottom: 10px;
+}
+
+.footer_ul {
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pie-pagina .grupo-1 .red-social li {
+    display: inline-block;
     list-style: none;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 40px;
 }
 
 .facebook {
     width: 25px;
-    margin-right: 1vw;
 }
 
 .instagram {
@@ -266,79 +312,21 @@
 
 .whatsapp {
     width: 25px;
-    margin-left: 1vw;
 }
 
-.redes {
-    display: flex;
-    justify-content: center;
-    padding-top: 7vw;    
-}
-
-@media only screen and (max-width: 768px){
-    .header {
-        flex-direction: column;
-        height: fit-content;        
-    }
-}
-
-/* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */ /* BOOTSTRAP */
-
-.headerbootstrap {
-    background-image: url(./imagenes/fondo.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
-}
-
-.logob {
-    width: 100px;
-    border-radius: 50px;
-}
-
-.nav-link {
-    font-size: larger;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
-
-.navbar-collapse {
-    margin: 8vh;
-}
-
-.fondoimagen {
-    width: 100%;
-    height: 47vw;
-}
-
-.nuevos_ingresos {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: center;
-    padding-top: 4vw;
-    margin-bottom: 4vw;
-}
-
-.nuevos_ingresos_2 {
-    width: 20vw;
-    color: white;
-}
-
-.fondo__seccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#imagenFondo {
-    width: 100vw;
-    height: 47vw;
-    background-image: url(./imagenes/fondo.png);
-    background-size: 100%;
-    
-}
-.fondo__seccion h1 {
-    width: 50vw;
-    font-size: 4vw;
-    color: white;
+.pie-pagina .grupo-2 {
+    background-color: rgb(22, 22, 22);
+    padding: 10px 10px;
     text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width:900px){
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
